@@ -1,0 +1,830 @@
+INFO:root:{'дата: 21-11-2021, время: 18-18-17, запрошенный URL: /, HTTP метод: GET'}
+ERROR:root:{'дата: 21-11-2021, время: 18-18-17, запрошенный URL: /, HTTP метод: GET'}
+INFO:root:{'дата: 21-11-2021, время: 18-18-17, запрошенный URL: /api/data/, HTTP метод: GET'}
+ERROR:root:{'дата: 21-11-2021, время: 18-18-17, запрошенный URL: /api/data/, HTTP метод: GET'}
+INFO:root:{'дата: 21-11-2021, время: 18-21-45, запрошенный URL: /api/data/file_db, HTTP метод: POST'}
+ERROR:root:{'дата: 21-11-2021, время: 18-21-45, запрошенный URL: /api/data/file_db, HTTP метод: POST'}
+ERROR:django.request:Internal Server Error: /api/data/file_db
+Traceback (most recent call last):
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/guide/guide_p/views.py", line 83, in file_db
+    Stations.flush()
+AttributeError: type object 'Stations' has no attribute 'flush'
+INFO:django.utils.autoreload:/Users/semyagureevyh/PycharmProjects/Kaliningrad/guide/guide_p/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/semyagureevyh/PycharmProjects/Kaliningrad/guide/guide_p/views.py changed, reloading.
+INFO:root:{'дата: 21-11-2021, время: 18-36-41, запрошенный URL: /api/data/, HTTP метод: GET'}
+ERROR:root:{'дата: 21-11-2021, время: 18-36-41, запрошенный URL: /api/data/, HTTP метод: GET'}
+INFO:root:{'дата: 21-11-2021, время: 18-36-48, запрошенный URL: /api/data/file_db, HTTP метод: POST'}
+ERROR:root:{'дата: 21-11-2021, время: 18-36-48, запрошенный URL: /api/data/file_db, HTTP метод: POST'}
+ERROR:django.request:Internal Server Error: /api/data/file_db
+Traceback (most recent call last):
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/guide/guide_p/views.py", line 86, in file_db
+    csv_dict_reader(file_db)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/guide/helpers/db_init.py", line 10, in csv_dict_reader
+    reader = csv.DictReader(file_obj, delimiter=',')
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/csv.py", line 86, in __init__
+    self.reader = reader(f, dialect, *args, **kwds)
+TypeError: 'function' object is not iterable
+INFO:django.utils.autoreload:/Users/semyagureevyh/PycharmProjects/Kaliningrad/guide/guide_p/views.py changed, reloading.
+INFO:root:{'дата: 21-11-2021, время: 18-39-44, запрошенный URL: /api/data/file_db, HTTP метод: POST'}
+ERROR:root:{'дата: 21-11-2021, время: 18-39-44, запрошенный URL: /api/data/file_db, HTTP метод: POST'}
+INFO:root:{'дата: 21-11-2021, время: 18-39-44, запрошенный URL: /, HTTP метод: GET'}
+ERROR:root:{'дата: 21-11-2021, время: 18-39-44, запрошенный URL: /, HTTP метод: GET'}
+INFO:root:{'дата: 21-11-2021, время: 18-39-44, запрошенный URL: /api/data/, HTTP метод: GET'}
+ERROR:root:{'дата: 21-11-2021, время: 18-39-44, запрошенный URL: /api/data/, HTTP метод: GET'}
+ERROR:django.request:Internal Server Error: /api/data/
+Traceback (most recent call last):
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/guide/guide_p/views.py", line 22, in get
+    return render(request, 'guide_p/guide_home.html', {'some': self.some.station})
+AttributeError: 'NoneType' object has no attribute 'station'
+INFO:root:{'дата: 21-11-2021, время: 18-39-47, запрошенный URL: /api/data/, HTTP метод: GET'}
+ERROR:root:{'дата: 21-11-2021, время: 18-39-47, запрошенный URL: /api/data/, HTTP метод: GET'}
+ERROR:django.request:Internal Server Error: /api/data/
+Traceback (most recent call last):
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/guide/guide_p/views.py", line 22, in get
+    return render(request, 'guide_p/guide_home.html', {'some': self.some.station})
+AttributeError: 'NoneType' object has no attribute 'station'
+INFO:root:{'дата: 21-11-2021, время: 18-39-52, запрошенный URL: /api/data/, HTTP метод: GET'}
+ERROR:root:{'дата: 21-11-2021, время: 18-39-52, запрошенный URL: /api/data/, HTTP метод: GET'}
+ERROR:django.request:Internal Server Error: /api/data/
+Traceback (most recent call last):
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/guide/guide_p/views.py", line 22, in get
+    return render(request, 'guide_p/guide_home.html', {'some': self.some.station})
+AttributeError: 'NoneType' object has no attribute 'station'
+INFO:root:{'дата: 21-11-2021, время: 18-39-57, запрошенный URL: /, HTTP метод: GET'}
+ERROR:root:{'дата: 21-11-2021, время: 18-39-57, запрошенный URL: /, HTTP метод: GET'}
+INFO:root:{'дата: 21-11-2021, время: 18-39-57, запрошенный URL: /api/data/, HTTP метод: GET'}
+ERROR:root:{'дата: 21-11-2021, время: 18-39-57, запрошенный URL: /api/data/, HTTP метод: GET'}
+ERROR:django.request:Internal Server Error: /api/data/
+Traceback (most recent call last):
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/guide/guide_p/views.py", line 22, in get
+    return render(request, 'guide_p/guide_home.html', {'some': self.some.station})
+AttributeError: 'NoneType' object has no attribute 'station'
+INFO:django.utils.autoreload:/Users/semyagureevyh/PycharmProjects/Kaliningrad/guide/guide_p/views.py changed, reloading.
+INFO:root:{'дата: 21-11-2021, время: 18-40-48, запрошенный URL: /api/data/, HTTP метод: GET'}
+ERROR:root:{'дата: 21-11-2021, время: 18-40-48, запрошенный URL: /api/data/, HTTP метод: GET'}
+ERROR:django.request:Internal Server Error: /api/data/
+Traceback (most recent call last):
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/guide/guide_p/views.py", line 23, in get
+    return render(request, 'guide_p/guide_home.html', {'some': self.some.station})
+AttributeError: 'GuideHome' object has no attribute 'some'
+INFO:django.utils.autoreload:/Users/semyagureevyh/PycharmProjects/Kaliningrad/guide/guide_p/views.py changed, reloading.
+INFO:root:{'дата: 21-11-2021, время: 18-41-51, запрошенный URL: /api/data/, HTTP метод: GET'}
+ERROR:root:{'дата: 21-11-2021, время: 18-41-51, запрошенный URL: /api/data/, HTTP метод: GET'}
+INFO:root:{'дата: 21-11-2021, время: 18-41-58, запрошенный URL: /api/data/file_db, HTTP метод: POST'}
+ERROR:root:{'дата: 21-11-2021, время: 18-41-58, запрошенный URL: /api/data/file_db, HTTP метод: POST'}
+INFO:root:{'дата: 21-11-2021, время: 18-41-58, запрошенный URL: /, HTTP метод: GET'}
+ERROR:root:{'дата: 21-11-2021, время: 18-41-58, запрошенный URL: /, HTTP метод: GET'}
+INFO:root:{'дата: 21-11-2021, время: 18-41-58, запрошенный URL: /api/data/, HTTP метод: GET'}
+ERROR:root:{'дата: 21-11-2021, время: 18-41-58, запрошенный URL: /api/data/, HTTP метод: GET'}
+INFO:root:{'дата: 21-11-2021, время: 18-42-01, запрошенный URL: /api/data/list/1/2, HTTP метод: GET'}
+ERROR:root:{'дата: 21-11-2021, время: 18-42-01, запрошенный URL: /api/data/list/1/2, HTTP метод: GET'}
+WARNING:django.request:Not Found: /api/data/list/1/2
+INFO:django.utils.autoreload:/Users/semyagureevyh/PycharmProjects/Kaliningrad/guide/guide_p/views.py changed, reloading.
+INFO:root:{'дата: 21-11-2021, время: 18-44-31, запрошенный URL: /, HTTP метод: GET'}
+ERROR:root:{'дата: 21-11-2021, время: 18-44-31, запрошенный URL: /, HTTP метод: GET'}
+INFO:root:{'дата: 21-11-2021, время: 18-44-31, запрошенный URL: /api/data/, HTTP метод: GET'}
+ERROR:root:{'дата: 21-11-2021, время: 18-44-31, запрошенный URL: /api/data/, HTTP метод: GET'}
+INFO:root:{'дата: 21-11-2021, время: 18-44-34, запрошенный URL: /api/data/list/1/2, HTTP метод: GET'}
+ERROR:root:{'дата: 21-11-2021, время: 18-44-34, запрошенный URL: /api/data/list/1/2, HTTP метод: GET'}
+WARNING:django.request:Not Found: /api/data/list/1/2
+INFO:django.utils.autoreload:/Users/semyagureevyh/PycharmProjects/Kaliningrad/guide/guide_p/views.py changed, reloading.
+INFO:root:{'дата: 21-11-2021, время: 18-46-39, запрошенный URL: /api/data/, HTTP метод: GET'}
+ERROR:root:{'дата: 21-11-2021, время: 18-46-39, запрошенный URL: /api/data/, HTTP метод: GET'}
+INFO:root:{'дата: 21-11-2021, время: 18-46-42, запрошенный URL: /api/data/list/1/2, HTTP метод: GET'}
+ERROR:root:{'дата: 21-11-2021, время: 18-46-42, запрошенный URL: /api/data/list/1/2, HTTP метод: GET'}
+ERROR:django.request:Internal Server Error: /api/data/list/1/2
+Traceback (most recent call last):
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/views/generic/list.py", line 142, in get
+    self.object_list = self.get_queryset()
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/views/generic/list.py", line 35, in get_queryset
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: GuideList is missing a QuerySet. Define GuideList.model, GuideList.queryset, or override GuideList.get_queryset().
+INFO:django.utils.autoreload:/Users/semyagureevyh/PycharmProjects/Kaliningrad/guide/guide_p/views.py changed, reloading.
+INFO:root:{'дата: 21-11-2021, время: 18-47-02, запрошенный URL: /api/data/, HTTP метод: GET'}
+ERROR:root:{'дата: 21-11-2021, время: 18-47-02, запрошенный URL: /api/data/, HTTP метод: GET'}
+INFO:root:{'дата: 21-11-2021, время: 18-47-03, запрошенный URL: /api/data/, HTTP метод: GET'}
+ERROR:root:{'дата: 21-11-2021, время: 18-47-03, запрошенный URL: /api/data/, HTTP метод: GET'}
+INFO:root:{'дата: 21-11-2021, время: 18-47-06, запрошенный URL: /api/data/list/1/2, HTTP метод: GET'}
+ERROR:root:{'дата: 21-11-2021, время: 18-47-06, запрошенный URL: /api/data/list/1/2, HTTP метод: GET'}
+WARNING:django.request:Not Found: /api/data/list/1/2
+INFO:django.utils.autoreload:/Users/semyagureevyh/PycharmProjects/Kaliningrad/guide/guide_p/views.py changed, reloading.
+INFO:root:{'дата: 21-11-2021, время: 18-47-22, запрошенный URL: /api/data/, HTTP метод: GET'}
+ERROR:root:{'дата: 21-11-2021, время: 18-47-22, запрошенный URL: /api/data/, HTTP метод: GET'}
+INFO:root:{'дата: 21-11-2021, время: 18-47-23, запрошенный URL: /api/data/list/1/2, HTTP метод: GET'}
+ERROR:root:{'дата: 21-11-2021, время: 18-47-23, запрошенный URL: /api/data/list/1/2, HTTP метод: GET'}
+INFO:root:{'дата: 21-11-2021, время: 18-47-26, запрошенный URL: /, HTTP метод: GET'}
+ERROR:root:{'дата: 21-11-2021, время: 18-47-26, запрошенный URL: /, HTTP метод: GET'}
+INFO:root:{'дата: 21-11-2021, время: 18-47-26, запрошенный URL: /api/data/, HTTP метод: GET'}
+ERROR:root:{'дата: 21-11-2021, время: 18-47-26, запрошенный URL: /api/data/, HTTP метод: GET'}
+INFO:root:{'дата: 21-11-2021, время: 18-47-32, запрошенный URL: /api/data/file_db, HTTP метод: POST'}
+ERROR:root:{'дата: 21-11-2021, время: 18-47-32, запрошенный URL: /api/data/file_db, HTTP метод: POST'}
+INFO:root:{'дата: 21-11-2021, время: 18-47-32, запрошенный URL: /, HTTP метод: GET'}
+ERROR:root:{'дата: 21-11-2021, время: 18-47-32, запрошенный URL: /, HTTP метод: GET'}
+INFO:root:{'дата: 21-11-2021, время: 18-47-32, запрошенный URL: /api/data/, HTTP метод: GET'}
+ERROR:root:{'дата: 21-11-2021, время: 18-47-32, запрошенный URL: /api/data/, HTTP метод: GET'}
+INFO:root:{'дата: 21-11-2021, время: 18-47-34, запрошенный URL: /api/data/list/1/2, HTTP метод: GET'}
+ERROR:root:{'дата: 21-11-2021, время: 18-47-34, запрошенный URL: /api/data/list/1/2, HTTP метод: GET'}
+INFO:django.utils.autoreload:/Users/semyagureevyh/PycharmProjects/Kaliningrad/guide/guide_p/views.py changed, reloading.
+INFO:root:{'дата: 21-11-2021, время: 18-48-09, запрошенный URL: /api/data/, HTTP метод: GET'}
+ERROR:root:{'дата: 21-11-2021, время: 18-48-09, запрошенный URL: /api/data/, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 07-53-23, запрошенный URL: /, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 07-53-23, запрошенный URL: /, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 07-53-23, запрошенный URL: /api/data/, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 07-53-23, запрошенный URL: /api/data/, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 07-53-33, запрошенный URL: /api/data/file_db, HTTP метод: POST'}
+ERROR:root:{'дата: 22-11-2021, время: 07-53-33, запрошенный URL: /api/data/file_db, HTTP метод: POST'}
+INFO:root:{'дата: 22-11-2021, время: 07-53-33, запрошенный URL: /, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 07-53-33, запрошенный URL: /, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 07-53-33, запрошенный URL: /api/data/, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 07-53-33, запрошенный URL: /api/data/, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 07-53-42, запрошенный URL: /api/data/list/1/2, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 07-53-42, запрошенный URL: /api/data/list/1/2, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 07-53-44, запрошенный URL: /, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 07-53-44, запрошенный URL: /, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 07-53-44, запрошенный URL: /api/data/, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 07-53-44, запрошенный URL: /api/data/, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 07-55-21, запрошенный URL: /api/data/file_db, HTTP метод: POST'}
+ERROR:root:{'дата: 22-11-2021, время: 07-55-21, запрошенный URL: /api/data/file_db, HTTP метод: POST'}
+INFO:root:{'дата: 22-11-2021, время: 07-55-21, запрошенный URL: /, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 07-55-21, запрошенный URL: /, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 07-55-21, запрошенный URL: /api/data/, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 07-55-21, запрошенный URL: /api/data/, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 07-55-23, запрошенный URL: /api/data/list/1/2, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 07-55-23, запрошенный URL: /api/data/list/1/2, HTTP метод: GET'}
+INFO:django.utils.autoreload:/Users/semyagureevyh/PycharmProjects/Kaliningrad/guide/helpers/db_init.py changed, reloading.
+INFO:root:{'дата: 22-11-2021, время: 08-07-18, запрошенный URL: /, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 08-07-18, запрошенный URL: /, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 08-07-18, запрошенный URL: /api/data/, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 08-07-18, запрошенный URL: /api/data/, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 08-07-24, запрошенный URL: /api/data/file_db, HTTP метод: POST'}
+ERROR:root:{'дата: 22-11-2021, время: 08-07-24, запрошенный URL: /api/data/file_db, HTTP метод: POST'}
+INFO:root:{'дата: 22-11-2021, время: 08-07-24, запрошенный URL: /, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 08-07-24, запрошенный URL: /, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 08-07-24, запрошенный URL: /api/data/, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 08-07-24, запрошенный URL: /api/data/, HTTP метод: GET'}
+INFO:django.utils.autoreload:/Users/semyagureevyh/PycharmProjects/Kaliningrad/guide/helpers/db_init.py changed, reloading.
+INFO:root:{'дата: 22-11-2021, время: 08-07-58, запрошенный URL: /api/data/file_db, HTTP метод: POST'}
+ERROR:root:{'дата: 22-11-2021, время: 08-07-58, запрошенный URL: /api/data/file_db, HTTP метод: POST'}
+INFO:root:{'дата: 22-11-2021, время: 08-07-58, запрошенный URL: /, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 08-07-58, запрошенный URL: /, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 08-07-58, запрошенный URL: /api/data/, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 08-07-58, запрошенный URL: /api/data/, HTTP метод: GET'}
+INFO:django.utils.autoreload:/Users/semyagureevyh/PycharmProjects/Kaliningrad/guide/helpers/db_init.py changed, reloading.
+INFO:root:{'дата: 22-11-2021, время: 08-08-34, запрошенный URL: /api/data/file_db, HTTP метод: POST'}
+ERROR:root:{'дата: 22-11-2021, время: 08-08-34, запрошенный URL: /api/data/file_db, HTTP метод: POST'}
+INFO:root:{'дата: 22-11-2021, время: 08-08-34, запрошенный URL: /, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 08-08-34, запрошенный URL: /, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 08-08-34, запрошенный URL: /api/data/, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 08-08-34, запрошенный URL: /api/data/, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 08-08-52, запрошенный URL: /api/data/file_db, HTTP метод: POST'}
+ERROR:root:{'дата: 22-11-2021, время: 08-08-52, запрошенный URL: /api/data/file_db, HTTP метод: POST'}
+INFO:root:{'дата: 22-11-2021, время: 08-08-52, запрошенный URL: /, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 08-08-52, запрошенный URL: /, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 08-08-52, запрошенный URL: /api/data/, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 08-08-52, запрошенный URL: /api/data/, HTTP метод: GET'}
+INFO:django.utils.autoreload:/Users/semyagureevyh/PycharmProjects/Kaliningrad/guide/helpers/db_init.py changed, reloading.
+INFO:root:{'дата: 22-11-2021, время: 08-09-11, запрошенный URL: /api/data/file_db, HTTP метод: POST'}
+ERROR:root:{'дата: 22-11-2021, время: 08-09-11, запрошенный URL: /api/data/file_db, HTTP метод: POST'}
+ERROR:django.request:Internal Server Error: /api/data/file_db
+Traceback (most recent call last):
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/guide/helpers/db_init.py", line 13, in csv_dict_reader
+    station = csv_line['Station']
+KeyError: 'Station'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/guide/guide_p/views.py", line 91, in file_db
+    csv_dict_reader(file_form)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/guide/helpers/db_init.py", line 21, in csv_dict_reader
+    print(exc.__traceback__())
+TypeError: 'traceback' object is not callable
+INFO:django.utils.autoreload:/Users/semyagureevyh/PycharmProjects/Kaliningrad/guide/helpers/db_init.py changed, reloading.
+INFO:root:{'дата: 22-11-2021, время: 08-10-25, запрошенный URL: /api/data/file_db, HTTP метод: POST'}
+ERROR:root:{'дата: 22-11-2021, время: 08-10-25, запрошенный URL: /api/data/file_db, HTTP метод: POST'}
+INFO:root:{'дата: 22-11-2021, время: 08-10-25, запрошенный URL: /, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 08-10-25, запрошенный URL: /, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 08-10-25, запрошенный URL: /api/data/, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 08-10-25, запрошенный URL: /api/data/, HTTP метод: GET'}
+INFO:django.utils.autoreload:/Users/semyagureevyh/PycharmProjects/Kaliningrad/guide/helpers/db_init.py changed, reloading.
+INFO:django.utils.autoreload:/Users/semyagureevyh/PycharmProjects/Kaliningrad/guide/helpers/db_init.py changed, reloading.
+INFO:root:{'дата: 22-11-2021, время: 08-13-44, запрошенный URL: /, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 08-13-44, запрошенный URL: /, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 08-13-44, запрошенный URL: /api/data/, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 08-13-44, запрошенный URL: /api/data/, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 08-13-48, запрошенный URL: /api/data/file_db, HTTP метод: POST'}
+ERROR:root:{'дата: 22-11-2021, время: 08-13-48, запрошенный URL: /api/data/file_db, HTTP метод: POST'}
+INFO:root:{'дата: 22-11-2021, время: 08-13-48, запрошенный URL: /, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 08-13-48, запрошенный URL: /, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 08-13-48, запрошенный URL: /api/data/, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 08-13-48, запрошенный URL: /api/data/, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 08-14-19, запрошенный URL: /api/data/file_db, HTTP метод: POST'}
+ERROR:root:{'дата: 22-11-2021, время: 08-14-19, запрошенный URL: /api/data/file_db, HTTP метод: POST'}
+INFO:root:{'дата: 22-11-2021, время: 08-14-19, запрошенный URL: /, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 08-14-19, запрошенный URL: /, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 08-14-19, запрошенный URL: /api/data/, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 08-14-19, запрошенный URL: /api/data/, HTTP метод: GET'}
+INFO:django.utils.autoreload:/Users/semyagureevyh/PycharmProjects/Kaliningrad/guide/helpers/db_init.py changed, reloading.
+INFO:root:{'дата: 22-11-2021, время: 08-14-47, запрошенный URL: /api/data/file_db, HTTP метод: POST'}
+ERROR:root:{'дата: 22-11-2021, время: 08-14-47, запрошенный URL: /api/data/file_db, HTTP метод: POST'}
+INFO:root:{'дата: 22-11-2021, время: 08-14-47, запрошенный URL: /, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 08-14-47, запрошенный URL: /, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 08-14-47, запрошенный URL: /api/data/, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 08-14-47, запрошенный URL: /api/data/, HTTP метод: GET'}
+INFO:django.utils.autoreload:/Users/semyagureevyh/PycharmProjects/Kaliningrad/guide/helpers/db_init.py changed, reloading.
+INFO:root:{'дата: 22-11-2021, время: 08-15-20, запрошенный URL: /api/data/file_db, HTTP метод: POST'}
+ERROR:root:{'дата: 22-11-2021, время: 08-15-20, запрошенный URL: /api/data/file_db, HTTP метод: POST'}
+INFO:root:{'дата: 22-11-2021, время: 08-15-20, запрошенный URL: /, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 08-15-20, запрошенный URL: /, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 08-15-20, запрошенный URL: /api/data/, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 08-15-20, запрошенный URL: /api/data/, HTTP метод: GET'}
+INFO:django.utils.autoreload:/Users/semyagureevyh/PycharmProjects/Kaliningrad/guide/helpers/db_init.py changed, reloading.
+INFO:django.utils.autoreload:/Users/semyagureevyh/PycharmProjects/Kaliningrad/guide/helpers/db_init.py changed, reloading.
+INFO:root:{'дата: 22-11-2021, время: 08-19-01, запрошенный URL: /api/data/file_db, HTTP метод: POST'}
+ERROR:root:{'дата: 22-11-2021, время: 08-19-01, запрошенный URL: /api/data/file_db, HTTP метод: POST'}
+ERROR:django.request:Internal Server Error: /api/data/file_db
+Traceback (most recent call last):
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/guide/guide_p/views.py", line 91, in file_db
+    csv_dict_reader(file_form)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/guide/helpers/db_init.py", line 10, in csv_dict_reader
+    with open(file_obj, 'r') as csvfile:
+FileNotFoundError: [Errno 2] No such file or directory: 'data.csv'
+INFO:django.utils.autoreload:/Users/semyagureevyh/PycharmProjects/Kaliningrad/guide/helpers/db_init.py changed, reloading.
+INFO:root:{'дата: 22-11-2021, время: 08-19-44, запрошенный URL: /api/data/file_db, HTTP метод: POST'}
+ERROR:root:{'дата: 22-11-2021, время: 08-19-44, запрошенный URL: /api/data/file_db, HTTP метод: POST'}
+ERROR:django.request:Internal Server Error: /api/data/file_db
+Traceback (most recent call last):
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/guide/guide_p/views.py", line 91, in file_db
+    csv_dict_reader(file_form)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/guide/helpers/db_init.py", line 10, in csv_dict_reader
+    with open(file_obj, 'r') as csvfile:
+FileNotFoundError: [Errno 2] No such file or directory: 'data.csv'
+INFO:root:{'дата: 22-11-2021, время: 08-19-48, запрошенный URL: /api/data/, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 08-19-48, запрошенный URL: /api/data/, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 08-19-53, запрошенный URL: /api/data/file_db, HTTP метод: POST'}
+ERROR:root:{'дата: 22-11-2021, время: 08-19-53, запрошенный URL: /api/data/file_db, HTTP метод: POST'}
+ERROR:django.request:Internal Server Error: /api/data/file_db
+Traceback (most recent call last):
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/guide/guide_p/views.py", line 91, in file_db
+    csv_dict_reader(file_form)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/guide/helpers/db_init.py", line 10, in csv_dict_reader
+    with open(file_obj, 'r') as csvfile:
+FileNotFoundError: [Errno 2] No such file or directory: 'data.csv'
+INFO:django.utils.autoreload:/Users/semyagureevyh/PycharmProjects/Kaliningrad/guide/helpers/db_init.py changed, reloading.
+INFO:root:{'дата: 22-11-2021, время: 08-21-27, запрошенный URL: /api/data/, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 08-21-27, запрошенный URL: /api/data/, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 08-21-32, запрошенный URL: /api/data/file_db, HTTP метод: POST'}
+ERROR:root:{'дата: 22-11-2021, время: 08-21-32, запрошенный URL: /api/data/file_db, HTTP метод: POST'}
+ERROR:django.request:Internal Server Error: /api/data/file_db
+Traceback (most recent call last):
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/guide/guide_p/views.py", line 91, in file_db
+    csv_dict_reader(file_form)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/guide/helpers/db_init.py", line 11, in csv_dict_reader
+    with open(file_obj, 'r') as csvfile:
+FileNotFoundError: [Errno 2] No such file or directory: 'data.csv'
+INFO:root:{'дата: 22-11-2021, время: 08-47-22, запрошенный URL: /api/data/file_db, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 08-47-22, запрошенный URL: /api/data/file_db, HTTP метод: GET'}
+ERROR:django.request:Internal Server Error: /api/data/file_db
+Traceback (most recent call last):
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    raise ValueError(
+ValueError: The view guide_p.views.file_db didn't return an HttpResponse object. It returned None instead.
+INFO:django.utils.autoreload:/Users/semyagureevyh/PycharmProjects/Kaliningrad/guide/guide_p/views.py changed, reloading.
+INFO:root:{'дата: 22-11-2021, время: 08-48-40, запрошенный URL: /api/data/, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 08-48-40, запрошенный URL: /api/data/, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 08-48-44, запрошенный URL: /api/data/file_db, HTTP метод: POST'}
+ERROR:root:{'дата: 22-11-2021, время: 08-48-44, запрошенный URL: /api/data/file_db, HTTP метод: POST'}
+ERROR:django.request:Internal Server Error: /api/data/file_db
+Traceback (most recent call last):
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/guide/guide_p/views.py", line 92, in file_db
+    csv_dict_reader(file_form)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/guide/helpers/db_init.py", line 11, in csv_dict_reader
+    with open(file_obj, 'r') as csvfile:
+TypeError: expected str, bytes or os.PathLike object, not InMemoryUploadedFile
+INFO:django.utils.autoreload:/Users/semyagureevyh/PycharmProjects/Kaliningrad/guide/guide_p/views.py changed, reloading.
+INFO:root:{'дата: 22-11-2021, время: 08-53-34, запрошенный URL: /, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 08-53-34, запрошенный URL: /, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 08-53-34, запрошенный URL: /api/data/, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 08-53-34, запрошенный URL: /api/data/, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 08-53-39, запрошенный URL: /api/data/file_db, HTTP метод: POST'}
+ERROR:root:{'дата: 22-11-2021, время: 08-53-39, запрошенный URL: /api/data/file_db, HTTP метод: POST'}
+ERROR:django.request:Internal Server Error: /api/data/file_db
+Traceback (most recent call last):
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/guide/guide_p/views.py", line 93, in file_db
+    file_form['name'] = request.POST.get('file_form')
+TypeError: 'InMemoryUploadedFile' object does not support item assignment
+INFO:django.utils.autoreload:/Users/semyagureevyh/PycharmProjects/Kaliningrad/guide/guide_p/views.py changed, reloading.
+INFO:root:{'дата: 22-11-2021, время: 08-53-58, запрошенный URL: /api/data/, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 08-53-58, запрошенный URL: /api/data/, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 08-54-01, запрошенный URL: /api/data/file_db, HTTP метод: POST'}
+ERROR:root:{'дата: 22-11-2021, время: 08-54-01, запрошенный URL: /api/data/file_db, HTTP метод: POST'}
+ERROR:django.request:Internal Server Error: /api/data/file_db
+Traceback (most recent call last):
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/guide/guide_p/views.py", line 95, in file_db
+    filename = fs.save(file_form.name, file_form)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/core/files/storage.py", line 51, in save
+    name = self.get_available_name(name, max_length=max_length)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/core/files/storage.py", line 68, in get_available_name
+    dir_name, file_name = os.path.split(name)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/posixpath.py", line 103, in split
+    p = os.fspath(p)
+TypeError: expected str, bytes or os.PathLike object, not NoneType
+INFO:django.utils.autoreload:/Users/semyagureevyh/PycharmProjects/Kaliningrad/guide/guide_p/views.py changed, reloading.
+INFO:root:{'дата: 22-11-2021, время: 08-54-12, запрошенный URL: /api/data/, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 08-54-12, запрошенный URL: /api/data/, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 08-54-17, запрошенный URL: /api/data/file_db, HTTP метод: POST'}
+ERROR:root:{'дата: 22-11-2021, время: 08-54-17, запрошенный URL: /api/data/file_db, HTTP метод: POST'}
+INFO:root:{'дата: 22-11-2021, время: 08-54-17, запрошенный URL: /, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 08-54-17, запрошенный URL: /, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 08-54-17, запрошенный URL: /api/data/, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 08-54-17, запрошенный URL: /api/data/, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 08-54-55, запрошенный URL: /api/data/list/1/2, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 08-54-55, запрошенный URL: /api/data/list/1/2, HTTP метод: GET'}
+INFO:django.utils.autoreload:/Users/semyagureevyh/PycharmProjects/Kaliningrad/guide/helpers/db_init.py changed, reloading.
+INFO:root:{'дата: 22-11-2021, время: 08-57-59, запрошенный URL: /api/data/file_db, HTTP метод: POST'}
+ERROR:root:{'дата: 22-11-2021, время: 08-57-59, запрошенный URL: /api/data/file_db, HTTP метод: POST'}
+INFO:root:{'дата: 22-11-2021, время: 08-57-59, запрошенный URL: /, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 08-57-59, запрошенный URL: /, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 08-57-59, запрошенный URL: /api/data/, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 08-57-59, запрошенный URL: /api/data/, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 08-58-00, запрошенный URL: /api/data/list/1/2, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 08-58-00, запрошенный URL: /api/data/list/1/2, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 08-58-28, запрошенный URL: /api/data/file_db, HTTP метод: POST'}
+ERROR:root:{'дата: 22-11-2021, время: 08-58-28, запрошенный URL: /api/data/file_db, HTTP метод: POST'}
+INFO:root:{'дата: 22-11-2021, время: 08-58-28, запрошенный URL: /, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 08-58-28, запрошенный URL: /, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 08-58-28, запрошенный URL: /api/data/, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 08-58-28, запрошенный URL: /api/data/, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 08-59-02, запрошенный URL: /api/data/, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 08-59-02, запрошенный URL: /api/data/, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 08-59-06, запрошенный URL: /api/data/file_db, HTTP метод: POST'}
+ERROR:root:{'дата: 22-11-2021, время: 08-59-06, запрошенный URL: /api/data/file_db, HTTP метод: POST'}
+INFO:root:{'дата: 22-11-2021, время: 08-59-06, запрошенный URL: /, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 08-59-06, запрошенный URL: /, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 08-59-06, запрошенный URL: /api/data/, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 08-59-06, запрошенный URL: /api/data/, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 08-59-13, запрошенный URL: /api/data/list/1/2, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 08-59-13, запрошенный URL: /api/data/list/1/2, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 08-59-59, запрошенный URL: /api/data/file_db, HTTP метод: POST'}
+ERROR:root:{'дата: 22-11-2021, время: 08-59-59, запрошенный URL: /api/data/file_db, HTTP метод: POST'}
+INFO:root:{'дата: 22-11-2021, время: 08-59-59, запрошенный URL: /, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 08-59-59, запрошенный URL: /, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 08-59-59, запрошенный URL: /api/data/, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 08-59-59, запрошенный URL: /api/data/, HTTP метод: GET'}
+INFO:django.utils.autoreload:/Users/semyagureevyh/PycharmProjects/Kaliningrad/guide/helpers/db_init.py changed, reloading.
+INFO:root:{'дата: 22-11-2021, время: 09-00-40, запрошенный URL: /api/data/file_db, HTTP метод: POST'}
+ERROR:root:{'дата: 22-11-2021, время: 09-00-40, запрошенный URL: /api/data/file_db, HTTP метод: POST'}
+INFO:root:{'дата: 22-11-2021, время: 09-00-40, запрошенный URL: /, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 09-00-40, запрошенный URL: /, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 09-00-40, запрошенный URL: /api/data/, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 09-00-40, запрошенный URL: /api/data/, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 09-00-41, запрошенный URL: /api/data/list/1/2, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 09-00-41, запрошенный URL: /api/data/list/1/2, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 09-05-34, запрошенный URL: /api/data/list/1/2, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 09-05-34, запрошенный URL: /api/data/list/1/2, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 09-05-35, запрошенный URL: /api/data/list/1/2, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 09-05-35, запрошенный URL: /api/data/list/1/2, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 09-06-14, запрошенный URL: /api/data/list/1/2, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 09-06-14, запрошенный URL: /api/data/list/1/2, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 09-06-26, запрошенный URL: /api/data/list/1/2, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 09-06-26, запрошенный URL: /api/data/list/1/2, HTTP метод: GET'}
+INFO:django.utils.autoreload:/Users/semyagureevyh/PycharmProjects/Kaliningrad/guide/helpers/db_init.py changed, reloading.
+INFO:root:{'дата: 22-11-2021, время: 09-07-59, запрошенный URL: /api/data/file_db, HTTP метод: POST'}
+ERROR:root:{'дата: 22-11-2021, время: 09-07-59, запрошенный URL: /api/data/file_db, HTTP метод: POST'}
+INFO:root:{'дата: 22-11-2021, время: 09-07-59, запрошенный URL: /, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 09-07-59, запрошенный URL: /, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 09-07-59, запрошенный URL: /api/data/, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 09-07-59, запрошенный URL: /api/data/, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 09-08-01, запрошенный URL: /api/data/list/1/2, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 09-08-01, запрошенный URL: /api/data/list/1/2, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 09-08-18, запрошенный URL: /api/data/file_db, HTTP метод: POST'}
+ERROR:root:{'дата: 22-11-2021, время: 09-08-18, запрошенный URL: /api/data/file_db, HTTP метод: POST'}
+INFO:root:{'дата: 22-11-2021, время: 09-08-18, запрошенный URL: /, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 09-08-18, запрошенный URL: /, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 09-08-18, запрошенный URL: /api/data/, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 09-08-18, запрошенный URL: /api/data/, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 09-08-19, запрошенный URL: /api/data/list/1/2, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 09-08-19, запрошенный URL: /api/data/list/1/2, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 09-08-21, запрошенный URL: /api/data/list/1/2, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 09-08-21, запрошенный URL: /api/data/list/1/2, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 09-08-21, запрошенный URL: /api/data/list/1/3, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 09-08-21, запрошенный URL: /api/data/list/1/3, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 09-12-07, запрошенный URL: /api/data/search, HTTP метод: POST'}
+ERROR:root:{'дата: 22-11-2021, время: 09-12-07, запрошенный URL: /api/data/search, HTTP метод: POST'}
+INFO:root:{'дата: 22-11-2021, время: 09-12-11, запрошенный URL: /api/data/search, HTTP метод: POST'}
+ERROR:root:{'дата: 22-11-2021, время: 09-12-11, запрошенный URL: /api/data/search, HTTP метод: POST'}
+INFO:django.utils.autoreload:/Users/semyagureevyh/PycharmProjects/Kaliningrad/guide/guide_p/views.py changed, reloading.
+INFO:root:{'дата: 22-11-2021, время: 09-13-42, запрошенный URL: /api/data/search, HTTP метод: POST'}
+ERROR:root:{'дата: 22-11-2021, время: 09-13-42, запрошенный URL: /api/data/search, HTTP метод: POST'}
+INFO:root:{'дата: 22-11-2021, время: 09-13-45, запрошенный URL: /api/data/, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 09-13-45, запрошенный URL: /api/data/, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 09-13-48, запрошенный URL: /api/data/search, HTTP метод: POST'}
+ERROR:root:{'дата: 22-11-2021, время: 09-13-48, запрошенный URL: /api/data/search, HTTP метод: POST'}
+INFO:root:{'дата: 22-11-2021, время: 09-20-02, запрошенный URL: /, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 09-20-02, запрошенный URL: /, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 09-20-02, запрошенный URL: /api/data/, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 09-20-02, запрошенный URL: /api/data/, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 09-20-07, запрошенный URL: /api/data/list/1/2, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 09-20-07, запрошенный URL: /api/data/list/1/2, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 09-20-13, запрошенный URL: /api/data/file_db, HTTP метод: POST'}
+ERROR:root:{'дата: 22-11-2021, время: 09-20-13, запрошенный URL: /api/data/file_db, HTTP метод: POST'}
+INFO:root:{'дата: 22-11-2021, время: 09-20-13, запрошенный URL: /, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 09-20-13, запрошенный URL: /, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 09-20-13, запрошенный URL: /api/data/, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 09-20-13, запрошенный URL: /api/data/, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 09-20-15, запрошенный URL: /api/data/list/1/2, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 09-20-15, запрошенный URL: /api/data/list/1/2, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 09-20-19, запрошенный URL: /api/data/list/2/2, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 09-20-19, запрошенный URL: /api/data/list/2/2, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 09-20-28, запрошенный URL: /api/data/search, HTTP метод: POST'}
+ERROR:root:{'дата: 22-11-2021, время: 09-20-28, запрошенный URL: /api/data/search, HTTP метод: POST'}
+INFO:root:{'дата: 22-11-2021, время: 09-20-48, запрошенный URL: /api/data/search, HTTP метод: POST'}
+ERROR:root:{'дата: 22-11-2021, время: 09-20-48, запрошенный URL: /api/data/search, HTTP метод: POST'}
+INFO:django.utils.autoreload:/Users/semyagureevyh/PycharmProjects/Kaliningrad/guide/guide_p/views.py changed, reloading.
+INFO:root:{'дата: 22-11-2021, время: 09-22-08, запрошенный URL: /api/data/search, HTTP метод: POST'}
+ERROR:root:{'дата: 22-11-2021, время: 09-22-08, запрошенный URL: /api/data/search, HTTP метод: POST'}
+INFO:root:{'дата: 22-11-2021, время: 09-22-18, запрошенный URL: /api/data/, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 09-22-18, запрошенный URL: /api/data/, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 09-22-22, запрошенный URL: /api/data/search, HTTP метод: POST'}
+ERROR:root:{'дата: 22-11-2021, время: 09-22-22, запрошенный URL: /api/data/search, HTTP метод: POST'}
+INFO:django.utils.autoreload:/Users/semyagureevyh/PycharmProjects/Kaliningrad/guide/guide_p/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/semyagureevyh/PycharmProjects/Kaliningrad/guide/guide_p/views.py changed, reloading.
+INFO:root:{'дата: 22-11-2021, время: 09-24-16, запрошенный URL: /api/data/, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 09-24-16, запрошенный URL: /api/data/, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 09-24-20, запрошенный URL: /api/data/search, HTTP метод: POST'}
+ERROR:root:{'дата: 22-11-2021, время: 09-24-20, запрошенный URL: /api/data/search, HTTP метод: POST'}
+INFO:django.utils.autoreload:/Users/semyagureevyh/PycharmProjects/Kaliningrad/guide/guide_p/views.py changed, reloading.
+INFO:root:{'дата: 22-11-2021, время: 09-24-49, запрошенный URL: /api/data/search, HTTP метод: POST'}
+ERROR:root:{'дата: 22-11-2021, время: 09-24-49, запрошенный URL: /api/data/search, HTTP метод: POST'}
+INFO:root:{'дата: 22-11-2021, время: 09-24-52, запрошенный URL: /api/data/, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 09-24-52, запрошенный URL: /api/data/, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 09-24-55, запрошенный URL: /api/data/search, HTTP метод: POST'}
+ERROR:root:{'дата: 22-11-2021, время: 09-24-56, запрошенный URL: /api/data/search, HTTP метод: POST'}
+INFO:django.utils.autoreload:/Users/semyagureevyh/PycharmProjects/Kaliningrad/guide/guide_p/views.py changed, reloading.
+INFO:root:{'дата: 22-11-2021, время: 09-34-51, запрошенный URL: /api/data/, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 09-34-51, запрошенный URL: /api/data/, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 09-34-52, запрошенный URL: /api/data/search, HTTP метод: POST'}
+ERROR:root:{'дата: 22-11-2021, время: 09-34-52, запрошенный URL: /api/data/search, HTTP метод: POST'}
+ERROR:django.request:Internal Server Error: /api/data/search
+Traceback (most recent call last):
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1768, in add_fields
+    join_info = self.setup_joins(name.split(LOOKUP_SEP), opts, alias, allow_many=allow_m2m)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1503, in setup_joins
+    path, final_field, targets, rest = self.names_to_path(
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1419, in names_to_path
+    raise FieldError("Cannot resolve keyword '%s' into field. "
+django.core.exceptions.FieldError: Cannot resolve keyword 'headline' into field. Choices are: admarea, district, id, line, station, status
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/guide/guide_p/views.py", line 82, in post
+    stations = Stations.objects.values_list('id', 'headline')
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/db/models/query.py", line 825, in values_list
+    clone = self._values(*_fields, **expressions)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/db/models/query.py", line 793, in _values
+    clone.query.set_values(fields)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/db/models/sql/query.py", line 2020, in set_values
+    self.add_fields(field_names, True)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1790, in add_fields
+    raise FieldError("Cannot resolve keyword %r into field. "
+django.core.exceptions.FieldError: Cannot resolve keyword 'headline' into field. Choices are: admarea, district, id, line, station, status
+INFO:django.utils.autoreload:/Users/semyagureevyh/PycharmProjects/Kaliningrad/guide/guide_p/views.py changed, reloading.
+INFO:root:{'дата: 22-11-2021, время: 09-35-08, запрошенный URL: /api/data/, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 09-35-08, запрошенный URL: /api/data/, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 09-35-10, запрошенный URL: /api/data/search, HTTP метод: POST'}
+ERROR:root:{'дата: 22-11-2021, время: 09-35-10, запрошенный URL: /api/data/search, HTTP метод: POST'}
+ERROR:django.request:Internal Server Error: /api/data/search
+Traceback (most recent call last):
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1768, in add_fields
+    join_info = self.setup_joins(name.split(LOOKUP_SEP), opts, alias, allow_many=allow_m2m)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1503, in setup_joins
+    path, final_field, targets, rest = self.names_to_path(
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1419, in names_to_path
+    raise FieldError("Cannot resolve keyword '%s' into field. "
+django.core.exceptions.FieldError: Cannot resolve keyword 'Station' into field. Choices are: admarea, district, id, line, station, status
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/guide/guide_p/views.py", line 82, in post
+    stations = Stations.objects.values_list('id', 'Station')
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/db/models/query.py", line 825, in values_list
+    clone = self._values(*_fields, **expressions)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/db/models/query.py", line 793, in _values
+    clone.query.set_values(fields)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/db/models/sql/query.py", line 2020, in set_values
+    self.add_fields(field_names, True)
+  File "/Users/semyagureevyh/PycharmProjects/Kaliningrad/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1790, in add_fields
+    raise FieldError("Cannot resolve keyword %r into field. "
+django.core.exceptions.FieldError: Cannot resolve keyword 'Station' into field. Choices are: admarea, district, id, line, station, status
+INFO:django.utils.autoreload:/Users/semyagureevyh/PycharmProjects/Kaliningrad/guide/guide_p/views.py changed, reloading.
+INFO:root:{'дата: 22-11-2021, время: 09-35-22, запрошенный URL: /api/data/, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 09-35-22, запрошенный URL: /api/data/, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 09-35-23, запрошенный URL: /api/data/search, HTTP метод: POST'}
+ERROR:root:{'дата: 22-11-2021, время: 09-35-23, запрошенный URL: /api/data/search, HTTP метод: POST'}
+INFO:django.utils.autoreload:/Users/semyagureevyh/PycharmProjects/Kaliningrad/guide/guide_p/views.py changed, reloading.
+INFO:root:{'дата: 22-11-2021, время: 09-45-14, запрошенный URL: /api/data/, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 09-45-14, запрошенный URL: /api/data/, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 09-45-15, запрошенный URL: /api/data/search, HTTP метод: POST'}
+ERROR:root:{'дата: 22-11-2021, время: 09-45-15, запрошенный URL: /api/data/search, HTTP метод: POST'}
+INFO:root:{'дата: 22-11-2021, время: 09-45-21, запрошенный URL: /api/data/, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 09-45-21, запрошенный URL: /api/data/, HTTP метод: GET'}
+INFO:django.utils.autoreload:/Users/semyagureevyh/PycharmProjects/Kaliningrad/guide/guide_p/views.py changed, reloading.
+INFO:root:{'дата: 22-11-2021, время: 09-45-28, запрошенный URL: /api/data/search, HTTP метод: POST'}
+ERROR:root:{'дата: 22-11-2021, время: 09-45-28, запрошенный URL: /api/data/search, HTTP метод: POST'}
+INFO:root:{'дата: 22-11-2021, время: 09-45-31, запрошенный URL: /api/data/, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 09-45-31, запрошенный URL: /api/data/, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 09-45-32, запрошенный URL: /api/data/, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 09-45-32, запрошенный URL: /api/data/, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 09-45-33, запрошенный URL: /api/data/search, HTTP метод: POST'}
+ERROR:root:{'дата: 22-11-2021, время: 09-45-33, запрошенный URL: /api/data/search, HTTP метод: POST'}
+INFO:root:{'дата: 22-11-2021, время: 09-45-40, запрошенный URL: /api/data/search, HTTP метод: POST'}
+ERROR:root:{'дата: 22-11-2021, время: 09-45-40, запрошенный URL: /api/data/search, HTTP метод: POST'}
+INFO:root:{'дата: 22-11-2021, время: 09-45-43, запрошенный URL: /api/data/list/1/2, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 09-45-43, запрошенный URL: /api/data/list/1/2, HTTP метод: GET'}
+INFO:django.utils.autoreload:/Users/semyagureevyh/PycharmProjects/Kaliningrad/guide/guide_p/views.py changed, reloading.
+INFO:root:{'дата: 22-11-2021, время: 09-46-40, запрошенный URL: /api/data/, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 09-46-40, запрошенный URL: /api/data/, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 09-46-41, запрошенный URL: /api/data/search, HTTP метод: POST'}
+ERROR:root:{'дата: 22-11-2021, время: 09-46-41, запрошенный URL: /api/data/search, HTTP метод: POST'}
+INFO:django.utils.autoreload:/Users/semyagureevyh/PycharmProjects/Kaliningrad/guide/guide_p/views.py changed, reloading.
+INFO:root:{'дата: 22-11-2021, время: 09-46-51, запрошенный URL: /api/data/, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 09-46-51, запрошенный URL: /api/data/, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 09-46-52, запрошенный URL: /api/data/search, HTTP метод: POST'}
+ERROR:root:{'дата: 22-11-2021, время: 09-46-52, запрошенный URL: /api/data/search, HTTP метод: POST'}
+INFO:root:{'дата: 22-11-2021, время: 09-47-16, запрошенный URL: /api/data/search, HTTP метод: POST'}
+ERROR:root:{'дата: 22-11-2021, время: 09-47-16, запрошенный URL: /api/data/search, HTTP метод: POST'}
+INFO:root:{'дата: 22-11-2021, время: 09-47-23, запрошенный URL: /api/data/, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 09-47-23, запрошенный URL: /api/data/, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 09-47-24, запрошенный URL: /api/data/, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 09-47-24, запрошенный URL: /api/data/, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 09-47-27, запрошенный URL: /api/data/search, HTTP метод: POST'}
+ERROR:root:{'дата: 22-11-2021, время: 09-47-27, запрошенный URL: /api/data/search, HTTP метод: POST'}
+INFO:django.utils.autoreload:/Users/semyagureevyh/PycharmProjects/Kaliningrad/guide/guide_p/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/semyagureevyh/PycharmProjects/Kaliningrad/guide/guide_p/views.py changed, reloading.
+INFO:django.utils.autoreload:/Users/semyagureevyh/PycharmProjects/Kaliningrad/guide/guide_p/views.py changed, reloading.
+INFO:root:{'дата: 22-11-2021, время: 09-53-21, запрошенный URL: /api/data/, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 09-53-21, запрошенный URL: /api/data/, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 09-53-26, запрошенный URL: /api/data/search, HTTP метод: POST'}
+ERROR:root:{'дата: 22-11-2021, время: 09-53-26, запрошенный URL: /api/data/search, HTTP метод: POST'}
+INFO:django.utils.autoreload:/Users/semyagureevyh/PycharmProjects/Kaliningrad/guide/guide_p/views.py changed, reloading.
+INFO:root:{'дата: 22-11-2021, время: 09-54-17, запрошенный URL: /api/data/, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 09-54-17, запрошенный URL: /api/data/, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 09-54-21, запрошенный URL: /api/data/search, HTTP метод: POST'}
+ERROR:root:{'дата: 22-11-2021, время: 09-54-21, запрошенный URL: /api/data/search, HTTP метод: POST'}
+INFO:django.utils.autoreload:/Users/semyagureevyh/PycharmProjects/Kaliningrad/guide/guide_p/views.py changed, reloading.
+INFO:root:{'дата: 22-11-2021, время: 10-01-32, запрошенный URL: /api/data/, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 10-01-32, запрошенный URL: /api/data/, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 10-01-40, запрошенный URL: /api/data/search, HTTP метод: POST'}
+ERROR:root:{'дата: 22-11-2021, время: 10-01-40, запрошенный URL: /api/data/search, HTTP метод: POST'}
+INFO:root:{'дата: 22-11-2021, время: 10-01-49, запрошенный URL: /api/data/list/1/2, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 10-01-49, запрошенный URL: /api/data/list/1/2, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 10-01-55, запрошенный URL: /api/data/list/2/2, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 10-01-55, запрошенный URL: /api/data/list/2/2, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 10-01-57, запрошенный URL: /api/data/list/1/2, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 10-01-57, запрошенный URL: /api/data/list/1/2, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 10-02-27, запрошенный URL: /api/data/file_db, HTTP метод: POST'}
+ERROR:root:{'дата: 22-11-2021, время: 10-02-27, запрошенный URL: /api/data/file_db, HTTP метод: POST'}
+INFO:root:{'дата: 22-11-2021, время: 10-02-27, запрошенный URL: /, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 10-02-27, запрошенный URL: /, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 10-02-27, запрошенный URL: /api/data/, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 10-02-27, запрошенный URL: /api/data/, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 10-02-29, запрошенный URL: /api/data/list/1/2, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 10-02-29, запрошенный URL: /api/data/list/1/2, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 10-02-35, запрошенный URL: /api/data/search, HTTP метод: POST'}
+ERROR:root:{'дата: 22-11-2021, время: 10-02-35, запрошенный URL: /api/data/search, HTTP метод: POST'}
+INFO:django.utils.autoreload:/Users/semyagureevyh/PycharmProjects/Kaliningrad/guide/guide_p/views.py changed, reloading.
+INFO:root:{'дата: 22-11-2021, время: 10-02-52, запрошенный URL: /api/data/search, HTTP метод: POST'}
+ERROR:root:{'дата: 22-11-2021, время: 10-02-52, запрошенный URL: /api/data/search, HTTP метод: POST'}
+INFO:django.utils.autoreload:/Users/semyagureevyh/PycharmProjects/Kaliningrad/guide/guide_p/views.py changed, reloading.
+INFO:root:{'дата: 22-11-2021, время: 10-03-03, запрошенный URL: /api/data/, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 10-03-03, запрошенный URL: /api/data/, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 10-03-06, запрошенный URL: /api/data/search, HTTP метод: POST'}
+ERROR:root:{'дата: 22-11-2021, время: 10-03-06, запрошенный URL: /api/data/search, HTTP метод: POST'}
+INFO:root:{'дата: 22-11-2021, время: 10-03-44, запрошенный URL: /api/data/search, HTTP метод: POST'}
+ERROR:root:{'дата: 22-11-2021, время: 10-03-44, запрошенный URL: /api/data/search, HTTP метод: POST'}
+INFO:root:{'дата: 22-11-2021, время: 10-03-49, запрошенный URL: /api/data/search, HTTP метод: POST'}
+ERROR:root:{'дата: 22-11-2021, время: 10-03-49, запрошенный URL: /api/data/search, HTTP метод: POST'}
+INFO:root:{'дата: 22-11-2021, время: 10-03-57, запрошенный URL: /api/data/search, HTTP метод: POST'}
+ERROR:root:{'дата: 22-11-2021, время: 10-03-57, запрошенный URL: /api/data/search, HTTP метод: POST'}
+INFO:root:{'дата: 22-11-2021, время: 10-05-09, запрошенный URL: /api/data/file_db, HTTP метод: POST'}
+ERROR:root:{'дата: 22-11-2021, время: 10-05-09, запрошенный URL: /api/data/file_db, HTTP метод: POST'}
+INFO:root:{'дата: 22-11-2021, время: 10-05-09, запрошенный URL: /, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 10-05-09, запрошенный URL: /, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 10-05-09, запрошенный URL: /api/data/, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 10-05-09, запрошенный URL: /api/data/, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 10-05-11, запрошенный URL: /api/data/list/1/2, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 10-05-11, запрошенный URL: /api/data/list/1/2, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 10-05-13, запрошенный URL: /api/data/list/2/2, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 10-05-13, запрошенный URL: /api/data/list/2/2, HTTP метод: GET'}
+INFO:django.utils.autoreload:/Users/semyagureevyh/PycharmProjects/Kaliningrad/guide/helpers/db_init.py changed, reloading.
+INFO:root:{'дата: 22-11-2021, время: 10-06-05, запрошенный URL: /api/data/file_db, HTTP метод: POST'}
+ERROR:root:{'дата: 22-11-2021, время: 10-06-05, запрошенный URL: /api/data/file_db, HTTP метод: POST'}
+INFO:root:{'дата: 22-11-2021, время: 10-06-05, запрошенный URL: /, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 10-06-05, запрошенный URL: /, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 10-06-05, запрошенный URL: /api/data/, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 10-06-05, запрошенный URL: /api/data/, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 10-06-06, запрошенный URL: /api/data/list/1/2, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 10-06-06, запрошенный URL: /api/data/list/1/2, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 10-06-08, запрошенный URL: /api/data/list/2/2, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 10-06-08, запрошенный URL: /api/data/list/2/2, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 10-07-23, запрошенный URL: /api/data/, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 10-07-23, запрошенный URL: /api/data/, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 10-07-45, запрошенный URL: /api/data/file_db, HTTP метод: POST'}
+ERROR:root:{'дата: 22-11-2021, время: 10-07-45, запрошенный URL: /api/data/file_db, HTTP метод: POST'}
+INFO:root:{'дата: 22-11-2021, время: 10-07-45, запрошенный URL: /, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 10-07-45, запрошенный URL: /, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 10-07-45, запрошенный URL: /api/data/, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 10-07-45, запрошенный URL: /api/data/, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 10-07-47, запрошенный URL: /api/data/list/1/2, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 10-07-47, запрошенный URL: /api/data/list/1/2, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 10-08-20, запрошенный URL: /api/data/file_db, HTTP метод: POST'}
+ERROR:root:{'дата: 22-11-2021, время: 10-08-20, запрошенный URL: /api/data/file_db, HTTP метод: POST'}
+INFO:root:{'дата: 22-11-2021, время: 10-08-20, запрошенный URL: /, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 10-08-20, запрошенный URL: /, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 10-08-20, запрошенный URL: /api/data/, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 10-08-20, запрошенный URL: /api/data/, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 10-08-28, запрошенный URL: /api/data/list/1/2, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 10-08-28, запрошенный URL: /api/data/list/1/2, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 10-08-31, запрошенный URL: /api/data/list/2/2, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 10-08-31, запрошенный URL: /api/data/list/2/2, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 10-08-38, запрошенный URL: /api/data/search, HTTP метод: POST'}
+ERROR:root:{'дата: 22-11-2021, время: 10-08-38, запрошенный URL: /api/data/search, HTTP метод: POST'}
+INFO:root:{'дата: 22-11-2021, время: 10-08-43, запрошенный URL: /api/data/search, HTTP метод: POST'}
+ERROR:root:{'дата: 22-11-2021, время: 10-08-43, запрошенный URL: /api/data/search, HTTP метод: POST'}
+INFO:root:{'дата: 22-11-2021, время: 10-08-48, запрошенный URL: /api/data/, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 10-08-48, запрошенный URL: /api/data/, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 10-08-59, запрошенный URL: /api/data/1, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 10-08-59, запрошенный URL: /api/data/1, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 10-09-09, запрошенный URL: /api/data/add, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 10-09-09, запрошенный URL: /api/data/add, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 10-09-37, запрошенный URL: /api/data/add, HTTP метод: POST'}
+ERROR:root:{'дата: 22-11-2021, время: 10-09-37, запрошенный URL: /api/data/add, HTTP метод: POST'}
+INFO:root:{'дата: 22-11-2021, время: 10-09-37, запрошенный URL: /, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 10-09-37, запрошенный URL: /, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 10-09-37, запрошенный URL: /api/data/, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 10-09-37, запрошенный URL: /api/data/, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 10-09-39, запрошенный URL: /api/data/list/1/2, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 10-09-39, запрошенный URL: /api/data/list/1/2, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 10-09-40, запрошенный URL: /api/data/list/2/2, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 10-09-40, запрошенный URL: /api/data/list/2/2, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 10-09-44, запрошенный URL: /api/data/4, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 10-09-44, запрошенный URL: /api/data/4, HTTP метод: GET'}
+INFO:django.utils.autoreload:/Users/semyagureevyh/PycharmProjects/Kaliningrad/guide/guide_p/views.py changed, reloading.
+INFO:root:{'дата: 22-11-2021, время: 10-15-48, запрошенный URL: /api/data/file_db, HTTP метод: POST'}
+ERROR:root:{'дата: 22-11-2021, время: 10-15-48, запрошенный URL: /api/data/file_db, HTTP метод: POST'}
+INFO:root:{'дата: 22-11-2021, время: 10-15-48, запрошенный URL: /, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 10-15-48, запрошенный URL: /, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 10-15-48, запрошенный URL: /api/data/, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 10-15-48, запрошенный URL: /api/data/, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 10-16-02, запрошенный URL: /api/data/list/1/2, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 10-16-02, запрошенный URL: /api/data/list/1/2, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 10-16-04, запрошенный URL: /api/data/list/2/2, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 10-16-04, запрошенный URL: /api/data/list/2/2, HTTP метод: GET'}

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация</title>
+</head>
+<body>
+    <h2>Регистрация</h2>
+    <br>
+        <a href="/" >main</a>
+    <br>
+    <form method="post" action="add">
+        {% csrf_token %}
+        {{ station_form.as_p }}
+        <button type="submit">Registration</button>
+    </form>
+</body>
+</html>

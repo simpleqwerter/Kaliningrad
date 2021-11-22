@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>справочник</title>
+</head>
+<body>
+    <h1>Guide mother father</h1>
+    <li>
+        <a href="list/1/2"> GET api/data/list/{page (1)}/{limit (1)}: возвращает часть списка, отсортированы в алфавитномпо полю Station."></a>
+    </li>
+        <br>
+    <li>
+        <a href="{{ id }}"> GET /api/data/{id}: возвращает одну запись в формате json;</a>
+    </li>
+        <br>
+    <li>
+        <a href="add">POST /api/data/add: добавляет новую запись в БД, body: { “station”: ‘value”, “line”: “value”, .. };</a>
+    </li>
+        <br>
+    <li>
+        <a href="delete/">DELETE /api/data/delete/{id}: удаляет запись, возвращает 200 ОК при успехе, 404 Not Found</a>
+    </li>
+        <br>
+    <li>
+        <form method="post" action="search">
+        {% csrf_token %}
+        <p>Введите название станции для поиска. Например:<input name="station" value="{{ some }}">
+        <button type="submit">Find</button></p>
+    </form>
+        <a href="search">реализовать endpoint POST /api/data/search, который позволяет искать записи по значению, формат запроса выбирается самостоятельно</a>
+    </li>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <form action="file_db" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <p>загрузите сюда файл  .csv</p>
+        <input type="file" name="file_form" >
+        <input type="submit">
+    </form>
+</body>
+</html>

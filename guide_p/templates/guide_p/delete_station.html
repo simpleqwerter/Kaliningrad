@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>delete</title>
+</head>
+<body>
+    <h2>delete</h2>
+    <form method="post" action="delete">
+        {% csrf_token %}
+        {{ station_form.as_p }}
+        <button type="submit">Registration</button>
+    </form>
+</body>
+</html>

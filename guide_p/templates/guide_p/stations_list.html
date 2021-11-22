@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>station_list</title>
+</head>
+<body>
+    <br>
+        <a href="/" >main</a>
+    <br>
+    <h1>station_list!!!</h1>
+        {% if data %}
+            <ol>
+                {% for a in data %}
+                <li><a href="/api/data/{{ a.id }}">{{ a.station }} </a></li>    <!-- href="/{{ reg }}"-->
+                <p>line {{ a.line }}</p>
+                <p>status {{ a.status }}</p>
+                <p><b>id {{ a.id }}</b></p>
+                <br>
+                {% endfor %}
+            </ol>
+
+            {% if is_paginated %}
+            <div class="pagination">
+                <span class="step-links">
+                    {% if page_obj.has_previous %}
+                        <a href="/api/data/list/1/{{ limit }}">&laquo; first</a>
+                        <a href="/api/data/list/{{ page_obj.previous_page_number }}/{{ limit }}">previous</a>
+                    {% endif %}
+
+                    <span class="current">
+                        Page {{ page_obj.number }} of {{ paginator.num_pages }}
+                    </span>
+
+                    {% if page_obj.has_next %}
+                        <a href="/api/data/list/{{ page_obj.next_page_number }}/{{ limit }}">next</a>
+                        <a href="/api/data/list/{{ paginator.num_pages }}/{{ limit }}">last &raquo;</a>
+                    {% endif %}
+                </span>
+            </div>
+            {% endif %}
+        {% else %}
+            <p>обьявлений нет</p>
+        {% endif %}
+</body>
+</html>

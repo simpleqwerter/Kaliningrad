@@ -1,0 +1,4 @@
+"Station","Line","AdmArea","District","Status","asd","sdf"
+"budget_cpp","Budget",выборгский,б4,"Average cost of drugs budgeted per patient for (US Dollars)",,
+"cudget_cpp","Budget",выборгский,5," excluding buffer stock (US Dollars)",,
+"audget_cpp","Budget",выборгский,5,"some interesting status",,
