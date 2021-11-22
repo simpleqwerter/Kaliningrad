@@ -95,5 +95,4 @@ def file_db(request):
         fs.delete(filename)
         return HttpResponseRedirect('/')
 
-def some():
-    pass
+
