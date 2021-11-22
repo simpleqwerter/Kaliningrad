@@ -23,7 +23,7 @@
     </li>
         <br>
     <li>
-        <form method="post" action="search">
+        <form method="post" action="list">
         {% csrf_token %}
         <p>Введите название станции для поиска. Например:<input name="station" value="{{ some }}">
         <button type="submit">Find</button></p>

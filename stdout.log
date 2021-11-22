@@ -828,3 +828,21 @@ INFO:root:{'дата: 22-11-2021, время: 10-16-02, запрошенный U
 ERROR:root:{'дата: 22-11-2021, время: 10-16-02, запрошенный URL: /api/data/list/1/2, HTTP метод: GET'}
 INFO:root:{'дата: 22-11-2021, время: 10-16-04, запрошенный URL: /api/data/list/2/2, HTTP метод: GET'}
 ERROR:root:{'дата: 22-11-2021, время: 10-16-04, запрошенный URL: /api/data/list/2/2, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 15-44-18, запрошенный URL: /, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 15-44-18, запрошенный URL: /, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 15-44-18, запрошенный URL: /api/data/, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 15-44-18, запрошенный URL: /api/data/, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 15-44-21, запрошенный URL: /api/data/search, HTTP метод: POST'}
+ERROR:root:{'дата: 22-11-2021, время: 15-44-21, запрошенный URL: /api/data/search, HTTP метод: POST'}
+INFO:root:{'дата: 22-11-2021, время: 15-44-28, запрошенный URL: /api/data/search, HTTP метод: POST'}
+ERROR:root:{'дата: 22-11-2021, время: 15-44-28, запрошенный URL: /api/data/search, HTTP метод: POST'}
+INFO:django.utils.autoreload:/Users/semyagureevyh/PycharmProjects/Kaliningrad/guide/guide_p/urls.py changed, reloading.
+INFO:root:{'дата: 22-11-2021, время: 15-44-55, запрошенный URL: /api/data/, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 15-44-55, запрошенный URL: /api/data/, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 15-44-58, запрошенный URL: /api/data/list, HTTP метод: POST'}
+ERROR:root:{'дата: 22-11-2021, время: 15-44-58, запрошенный URL: /api/data/list, HTTP метод: POST'}
+INFO:root:{'дата: 22-11-2021, время: 15-45-09, запрошенный URL: /api/data/list/1/2, HTTP метод: GET'}
+ERROR:root:{'дата: 22-11-2021, время: 15-45-09, запрошенный URL: /api/data/list/1/2, HTTP метод: GET'}
+INFO:root:{'дата: 22-11-2021, время: 15-45-18, запрошенный URL: /api/data/list, HTTP метод: POST'}
+ERROR:root:{'дата: 22-11-2021, время: 15-45-18, запрошенный URL: /api/data/list, HTTP метод: POST'}
+INFO:django.utils.autoreload:/Users/semyagureevyh/PycharmProjects/Kaliningrad/guide/guide_p/views.py changed, reloading.

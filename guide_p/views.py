@@ -20,6 +20,7 @@ class GuideHome(View):
     some = None
     if Stations.objects.first() is not None:
         some = Stations.objects.first()
+
     def get(self, request):
         if self.some:
             return render(request, 'guide_p/guide_home.html', {'some': self.some.station})
@@ -27,6 +28,12 @@ class GuideHome(View):
 
 
 class GuideList(ListView):
+
+    def post(self, request):
+        inputtxt = request.POST
+        st = inputtxt['station']
+        stations = Stations.objects.filter(station__icontains=st)
+        return render(request, 'guide_p/stations_list.html', {'data': stations})
 
     def get_context_data(self, **kwargs):
         context = super(GuideList, self).get_context_data(**kwargs)
@@ -37,12 +44,10 @@ class GuideList(ListView):
     template_name = 'guide_p/stations_list.html'
     context_object_name = 'data'
     allow_empty = True
-
     queryset = Stations.objects.all()
 
     def get_paginate_by(self, queryset):
         return self.kwargs['limit']
-
 
 
 class GuideDetailView(DetailView):
@@ -74,16 +79,10 @@ class DeleteStationView(View):
             return HttpResponseNotFound("<h2>station not found или raise 'eror 404'</h2>")
 
 
-class SearchView(View):
-
-    def post(self, request):
-        inputtxt = request.POST
-        st = inputtxt['station']
-        stations = Stations.objects.filter(station__icontains=st)
-        return render(request, 'guide_p/stations_list.html', {'data': stations})
-
-
 def file_db(request):
+    """
+    передает содержимое файл css в модель БД Stations
+    """
     from django.core.files.storage import FileSystemStorage
 
     for a in Stations.objects.all():
